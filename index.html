@@ -88,7 +88,7 @@
             </nav>
 
             <div class="about_slider">
-                <div class="owl-carousel">
+                <div class="owl-carousel owl-one">
                     <div class="about_slide">
                         <h2>We Are Awesome</h2>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
@@ -299,7 +299,26 @@
     </div>
 
     <div class="opinion">
-        <div class="opinion_content container"> 
+        <div class="opinion_content container">
+            <div class="opinion_head">
+                <img src="./img/opinion_head.png" alt="">
+            </div> 
+            
+            <div class="opinion_slider">
+                <div class="owl-carousel owl-two">
+                    <div class="opinion_slide" >
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                        <h3>Jane Galadriel</h3>
+                        <h4>CEO Tangkurep</h4>
+                    </div> 
+                    <div class="opinion_slide">
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                        <h3>Jane Galadriel</h3>
+                        <h4>CEO Tangjurep</h4>
+                    </div>
+                    
+                </div>
+            </div>
 
         </div>
     </div>
@@ -449,7 +468,7 @@
     
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
+            $(".owl-one").owlCarousel({
                 items: 1,
                 loop: true,
                 autoplay: true,
@@ -457,6 +476,17 @@
                 autoplayHoverPause: true,
                 dots: true,
                 nav: false
+            });
+        });
+        $(document).ready(function(){
+            $(".owl-two").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                dots: true,
+                nav:false,           
             });
         });
     </script>
